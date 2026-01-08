@@ -1,3 +1,3 @@
-export * from './atoms'
-export * from './molecules'
-export * from './organisms'
+export * from './banner'
+export * from './button/button'
+export * from './footer'

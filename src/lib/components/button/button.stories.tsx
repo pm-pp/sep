@@ -1,48 +1,48 @@
-import type { Meta, StoryObj } from '@storybook/react-vite'
-import { objectValuesToControls } from '../../../storybook-utils'
-import { AT_BUTTON_VARIANT, AtButton } from '.'
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { objectValuesToControls } from '../../storybook-utils';
+import { AT_BUTTON_VARIANT, Button } from './button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Atoms/Button',
-  component: AtButton,
+  title: 'Button',
+  component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     label: { control: 'text' },
     variant: { options: objectValuesToControls(AT_BUTTON_VARIANT).options },
-    onClick: { action: 'clicked' },
-  },
-} satisfies Meta<typeof AtButton>
+    onClick: { action: 'clicked' }
+  }
+} satisfies Meta<typeof Button>;
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
     label: 'Button',
     variant: 'PRIMARY',
-    onClick: () => alert('clicking primary'),
-  },
-}
+    onClick: () => alert('clicking primary')
+  }
+};
 
 export const Secondary: Story = {
   args: {
     label: 'Button',
-    variant: 'SECONDARY',
-  },
-}
+    variant: 'SECONDARY'
+  }
+};
 
 export const Tertiary: Story = {
   args: {
     label: 'Button',
-    variant: 'TERTIARY',
-  },
-}
+    variant: 'TERTIARY'
+  }
+};
 
 export const Disabled: Story = {
   args: {
     label: 'Button',
-    isDisabled: true,
-  },
-}
+    isDisabled: true
+  }
+};

@@ -1,22 +1,18 @@
 {
-  "name": "vite-component-library-template",
+  "name": "sep",
   "private": false,
-  "version": "3.0.1",
+  "version": "0.0.0",
   "packageManager": "pnpm@10.12.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/IgnacioNMiranda/vite-component-library-template"
-  },
-  "main": "./dist/vite-component-library-template.umd.js",
-  "module": "./dist/vite-component-library-template.es.js",
+  "main": "./dist/sep.umd.js",
+  "module": "./dist/sep.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/vite-component-library-template.es.js",
-      "require": "./dist/vite-component-library-template.umd.js"
+      "import": "./dist/sep.es.js",
+      "require": "./dist/sep.umd.js"
     },
-    "./styles.css": "./dist/vite-component-library-template.css"
+    "./styles.css": "./dist/sep.css"
   },
   "engines": {
     "node": ">=22"
